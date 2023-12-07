@@ -23,8 +23,30 @@ console.log(param);//this will print HTMLCollection(2)
 let mytag = document.getElementsByTagName("p");
 console.log(mytag);//this will print HTMLCollection(1)
 
-//Query Selector:-  document.querySelector("myid/ myclass / tag")
+//Query Selector:-  document.querySelector("myid/ myclass / tag") and it return Node list
 
 let firstelement = document.querySelector("p")
 console.log(firstelement);
 console.dir(firstelement)//this will print p.para() ka 1st element
+
+let firstclasselement = document.querySelector(".para")//we have to  use class with .classname
+console.log(firstclasselement);
+console.dir(firstclasselement)
+
+let firstidelement = document.querySelector("#heading");//we have to  use id  with #idname
+console.log(firstidelement);
+console.dir(firstidelement)
+
+
+//Query Selector all:-  document.querySelectorAll("myid/ myclass / tag") and it return Node list
+
+let allelement = document.querySelectorAll("p");
+console.log(allelement);//this will give all NodeList
+console.dir(allelement)
+
+//tagName:-return tag for element nodes it show tag name (button/para/anchor)
+
+//firstidelement.tagName in console
+
+//innerText:-it returns the text contentof the element and all its children
+//innerHTML =it returns the plain text or HTML contents in the element
