@@ -37,3 +37,5 @@ fetch("https://jsonplaceholder.typicode.com/photos/1")
     console.log(data);
   })
   
+
+  
