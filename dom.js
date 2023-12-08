@@ -72,9 +72,32 @@ colorbox.style.backgroundColor="red";
 colorbox.style.fontSize ="20px"
 
 
-//dom manuplation Insert Element:-we can create element also 1st create then 2nd add in our page
+//dom manuplation Insert Element:-we can create element also 1st create then 2nd add in our page.
+
+
+
+
 //Create:-
+
+//Exapmple:-add button through JS
 let newButton = document.createElement("button")
+newButton.innerText ="click me!"
 console.log(newButton);
 
+let div1 = document.querySelector("#box")
+div1.append(newButton)//end of node
+// div1.prepend(newButton)//start of node
+// div1.before(newButton)//befor the div
+// div1.after(newButton)//after the div
+
 //add in page(html)
+//Exapmple:-add heading(h1) through JS
+let newHeading = document.createElement("h1");
+newHeading.innerHTML="Hii i am new Heading"
+
+document.querySelector("body").append(newHeading)
+
+//remove element:-
+
+newHeading.remove();//this will remove "Hii i am new Heading" from our page
+newButton.remove();//this will remove button
