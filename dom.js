@@ -50,3 +50,31 @@ console.dir(allelement)
 
 //innerText:-it returns the text contentof the element and all its children
 //innerHTML =it returns the plain text or HTML contents in the element
+//textcontent:-it returns textual content even for hidden elements
+
+//Exapmle1:-create h2 tag element using text "Hello Javascript" append "welcome to my worrld" to this text using JS.
+let h2 = document.querySelector("h2")
+console.log(h2);
+
+h2.innerText = h2.innerText+" welcome to my world!";//finally in my page "Hello Javascript welcome to my world!""
+
+//Exapmle2:-create 3 div with common class name -"box".access them and add some unique text to each with JS
+
+let divs = document.querySelectorAll(".box")
+divs[0].innerHTML="first class";
+divs[1].innerHTML ="second class"
+divs[2].innerHTML = "third class"
+
+
+//dom manuplation with style:-
+let colorbox = document.querySelector(".colorbox");
+colorbox.style.backgroundColor="red";
+colorbox.style.fontSize ="20px"
+
+
+//dom manuplation Insert Element:-we can create element also 1st create then 2nd add in our page
+//Create:-
+let newButton = document.createElement("button")
+console.log(newButton);
+
+//add in page(html)
